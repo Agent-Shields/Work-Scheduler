@@ -9,7 +9,7 @@ Challenge assignment intended to test my ability to manipulate dynamically gener
 *Javascript
 
 ## Website
-https://agent-shields.github.io/Timed-Quiz/
+https://agent-shields.github.io/Work-Scheduler/
 
 ## Screenshot
 This image is what you should see when 
