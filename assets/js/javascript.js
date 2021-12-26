@@ -26,6 +26,7 @@ var workingHours = [hourOne, hourTwo, hourThree, hourFour, hourFive, hourSix, ho
 for (i = 0; i < workingHours.length; i++) {
     //testing if loop is incrementing properly
     console.log(workingHours[i]);
+    
 }
 
 // dynamically display current date
