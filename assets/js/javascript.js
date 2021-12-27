@@ -61,22 +61,47 @@ var setHourNine = document.querySelector("#timeSlotNine")
 
 var workingHours = [hourOneMT, hourTwoMT, hourThreeMT, hourFourMT, hourFiveMT, hourSixMT, hourSevenMT, hourEightMT, hourNineMT];
 
+// set variables for div description containers
+
+var descOne = document.querySelector("#descriptionOne")
+
+var descTwo = document.querySelector("#descriptionTwo")
+
+var descThree = document.querySelector("#descriptionThree")
+
+var descFour = document.querySelector("#descriptionFour")
+
+var descFive = document.querySelector("#descriptionFive")
+
+var descSix = document.querySelector("#descriptionSix")
+
+var descSeven = document.querySelector("#descriptionSeven")
+
+var descEight = document.querySelector("#descriptionEight")
+
+var descNine = document.querySelector("#descriptionNine")
+
+// create div container array
+
+var arrTimeBlock = [descOne, descTwo, descThree, descFour, descFive, descSix, descSeven, descEight, descNine]
+
 // loop through working hours 
 
-for (i = 0; i < workingHours.length;) {
+for (i = 0; i < workingHours.length; ) {
 
   Number(workingHours[i])
 
     if (currentHour > workingHours[i]) {
         console.log(currentHour + " is after " + workingHours[i])
-        
+        arrTimeBlock[i].classList.add("past")
     } else if (currentHour === workingHours[i]) {
         console.log(currentHour + " is equal to " + workingHours[i])
-
+        arrTimeBlock[i].classList.add("present")
     } else if (currentHour < workingHours[i]) {
         console.log(currentHour + " is before " + workingHours[i])
-
+        arrTimeBlock[i].classList.add("future")
     }
+
     i++
 };
 
