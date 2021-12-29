@@ -105,6 +105,12 @@ for (i = 0; i < workingHours.length; ) {
     i++
 };
 
+// listen for click on description element
+
+$(".description").on("click", function(){
+    console.log("description clicked!")
+})
+
 // dynamically display current date
 var currentDayDisplay = function(){
     $("#currentDay").text(currentDay)
